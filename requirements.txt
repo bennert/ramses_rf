@@ -1,7 +1,12 @@
-# last checked/updated: 2023/03/05
-#
-
-# for using the library (sans CLI)
-  colorlog>=6.6.0
-  pyserial-asyncio>=0.6  # incl. pyserial
-  voluptuous>=0.13.1
+click==8.1.6
+colorama==0.4.6
+colorlog==6.7.0
+debugpy==1.8.0
+pyserial==3.5
+pyserial_asyncio==0.6
+pytest==7.4.0
+PyYAML==6.0.1
+PyYAML==6.0.1
+setuptools==65.5.0
+typeguard==4.1.5
+voluptuous==0.13.1
