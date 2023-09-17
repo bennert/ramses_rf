@@ -3,7 +3,9 @@ services:
   rames_rf:
     container_name: Honeywell-HGI80-app
     build: .
-    volumes:
+    devices:
       - /dev/serial/by-id/usb-Texas_Instruments_TUSB3410_Boot_Device_TUSB3410-if00-port0:/dev/ttyUSB0
+    volumes:
       - .:/usr/local
+    command: python client.py monitor /dev/ttyUSB0 -o packet.log
 
